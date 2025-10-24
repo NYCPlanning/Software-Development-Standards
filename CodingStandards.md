@@ -99,21 +99,21 @@ async function fetchCustomer(id) {
 	· Keep functions small and focused (< 20 lines ideally).
 
 ## Error Handling
-// Always handle errors in async code
-async function processOrder(orderId) {
-    try {
-        const order = await orderService.getOrder(orderId);
-        await orderService.validate(order);
-        await orderService.process(order);
-        return { success: true, orderId };
-    } catch (error) {
-        console.error(`Order processing failed for ${orderId}:`, error);
-        return { success: false, error: error.message };
-    }
-}
+	· // Always handle errors in async code
+	· async function processOrder(orderId) {
+    	· try {
+        	· const order = await orderService.getOrder(orderId);
+        	· await orderService.validate(order);
+        	· await orderService.process(order);
+        	· return { success: true, orderId };
+    	· } catch (error) {
+        	· console.error(`Order processing failed for ${orderId}:`, error);
+        	· return { success: false, error: error.message };
+    	· }
+	· }
  
-// Use optional chaining and nullish coalescing
-const customerName = user?.profile?.name ?? 'Guest';
+	· // Use optional chaining and nullish coalescing
+	· const customerName = user?.profile?.name ?? 'Guest';
 	
 ## API Calls
 	· Centralize API configuration and base URLs.
@@ -129,22 +129,22 @@ const customerName = user?.profile?.name ?? 'Guest';
 	· Mock external dependencies using Moq or Nsubstitute, X.
 	· Aim for 80%+ code coverage on business logic.
 	
-[Fact]
-public async Task GetCustomerAsync_WithValidId_ReturnsCustomer()
-{
-    // Arrange
-    var mockRepo = new Mock<ICustomerRepository>();
-    mockRepo.Setup(r => r.GetByIdAsync(1))
-        .ReturnsAsync(new Customer { Id = 1, Name = "Test" });
-    var service = new CustomerService(mockRepo.Object);
+	· [Fact]
+	· public async Task GetCustomerAsync_WithValidId_ReturnsCustomer()
+	· {
+    	· // Arrange
+    	· var mockRepo = new Mock<ICustomerRepository>();
+    	· mockRepo.Setup(r => r.GetByIdAsync(1))
+        	· .ReturnsAsync(new Customer { Id = 1, Name = "Test" });
+    	· var service = new CustomerService(mockRepo.Object);
  
-    // Act
-    var result = await service.GetCustomerAsync(1);
+    	· // Act
+    	· var result = await service.GetCustomerAsync(1);
  
-    // Assert
-    Assert.NotNull(result);
-    Assert.Equal(1, result.Id);
-}
+    	· // Assert
+    	· Assert.NotNull(result);
+    	· Assert.Equal(1, result.Id);
+	· }
  
 
 ## Security Standards (OWASP TOP 10)
