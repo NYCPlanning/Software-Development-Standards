@@ -1,3 +1,3 @@
 # Page 1
 Testing md documents.
-[README.md]
+[a relative link](README.md)
