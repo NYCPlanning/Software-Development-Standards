@@ -121,6 +121,64 @@ const customerName = user?.profile?.name ?? 'Guest';
 	· Implement proper loading states and error messages.
 	· Always handle HTTP error status codes appropriately.
 
+## Testing Standards
+### Unit Testing (C#)
+	· Use xUnit, NUnit, or MSTest. 
+	· Follow AAA pattern: Arrange, Act, Assert.
+	· Use meaningful test names: MethodName_Scenario_ExpectedBehavior.
+	· Mock external dependencies using Moq or Nsubstitute, X.
+	· Aim for 80%+ code coverage on business logic.
+	
+[Fact]
+public async Task GetCustomerAsync_WithValidId_ReturnsCustomer()
+{
+    // Arrange
+    var mockRepo = new Mock<ICustomerRepository>();
+    mockRepo.Setup(r => r.GetByIdAsync(1))
+        .ReturnsAsync(new Customer { Id = 1, Name = "Test" });
+    var service = new CustomerService(mockRepo.Object);
+ 
+    // Act
+    var result = await service.GetCustomerAsync(1);
+ 
+    // Assert
+    Assert.NotNull(result);
+    Assert.Equal(1, result.Id);
+}
+ 
+
+## Security Standards (OWASP TOP 10)
+### Input Validation
+	· Validate all user input on both client and server sides.
+	· Use parameterized queries/ORM to prevent SQL injection.
+	· Sanitize output to prevent XSS attacks.
+	· Implement proper authentication and authorization checks.
+### Sensitive Data
+	· Never commit secrets, API keys, or connection strings to source control.
+	· Use environment variables or secure configuration management (nice to have an example file).
+	· Encrypt sensitive data at rest and in transit.
+	· Log security events but never log passwords or sensitive personal data.
+### HTTPS and CORS
+	· Always use HTTPS in production.
+	· Configure CORS policies explicitly, never use wildcard (*) in production.
+	· Implement proper CSRF protection for state-changing operations.
+
+
+## Documentation
+### Code Comments
+	· Write self-documenting code; use comments to explain "why", not "what".
+	· Keep comments up-to-date with code changes.
+	· Remove commented-out code; rely on version control instead.
+
+### README Files
+	· Every project must have a README with setup instructions, dependencies, and build steps.
+	· Document environment variables and configuration requirements.
+	· Include troubleshooting section for common issues and/or FAQ.
+
+### API Documentation
+	· Document all public APIs with request/response examples.
+	· We may use Swagger/OpenAPI for REST APIs.
+
 
 
 
