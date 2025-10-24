@@ -1,3 +1,3 @@
 # Whiteboard
 Greenfield for experimentation
-[page1.md]
+[a relative link](page1.md)
