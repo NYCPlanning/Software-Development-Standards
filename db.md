@@ -1,4 +1,5 @@
-# SQL Server Standards
+# DB Standards
+# 1. MSSQL
 ## Naming Conventions
 	· Tables: PascalCase, plural nouns (Customers, OrderDetails)
 	· Columns: PascalCase, singular nouns (FirstName, OrderDate)
