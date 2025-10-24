@@ -24,7 +24,7 @@
 * Reviews should focus on logic, security, performance, and adherence to these standards.
 * Address all comments or provide justification before approval.
 
-__Suggestions
+__Suggestions__
 * Focusing on the Code, Not the Coder.
 When reviewing code, keep comments focused on the changes themselves rather than making assumptions about the author. Instead of saying "You did this wrong," try "This approach could lead to performance issues - what do you think about using X instead?" This small shift in language keeps the discussion collaborative and solution-focused. Remember that reviews are about improving the codebase together, not finding fault.
 
