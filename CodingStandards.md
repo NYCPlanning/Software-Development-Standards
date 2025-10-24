@@ -1,15 +1,15 @@
 # Coding Standards
 ## Assumptions for the SDLC (phases)
-1. Create and assign a User Story, Task, etc.
-2. Analyze.
-3. Code(Implementation, via new feature branch).
-4. Test locally.
-5. Pull Request(of the feature branch).
-6. Code Review(peer review).
-7. Approve/Reject(by peers)
-* A.Deploy to Dev/QA/Staging. 
-* R.Return to Developer with feedback.
-8. Ready for QA.
+	·//1. Create and assign a User Story, Task, etc.
+	·//2. Analyze.
+	·//3. Code(Implementation, via new feature branch).
+	·//4. Test locally.
+	·//5. Pull Request(of the feature branch).
+	·//6. Code Review(peer review).
+	·//7. Approve/Reject(by peers)
+	·//* A.Deploy to Dev/QA/Staging. 
+	·//* R.Return to Developer with feedback.
+	·//8. Ready for QA.
 
 ## General Principles
 ### Code Quality Standards
@@ -59,23 +59,23 @@ Release |release/v< MAJOR >.< MINOR >.< PATCH >| release/v2.4.1  |	Release prepa
         
 ### JavaScript Standards
 ## Modern JavaScript (ES6+)
-// Use const by default, let when reassignment needed, never var
-const API_URL = 'https://api.example.com';
-let userCount = 0;
+	· // Use const by default, let when reassignment needed, never var
+	· const API_URL = 'https://api.example.com';
+	· let userCount = 0;
  
-// Use arrow functions for callbacks and short functions
-const numbers = [1, 2, 3, 4, 5];
-const doubled = numbers.map(n => n * 2);
+	· // Use arrow functions for callbacks and short functions
+	· const numbers = [1, 2, 3, 4, 5];
+	· const doubled = numbers.map(n => n * 2);
  
-// Use template literals
-const greeting = `Hello, ${userName}! You have ${messageCount} new messages.`;
+	· // Use template literals
+	· const greeting = `Hello, ${userName}! You have ${messageCount} new messages.`;
  
-// Use destructuring
-const { firstName, lastName, email } = customer;
-const [first, second, ...rest] = items;
+	· // Use destructuring
+	· const { firstName, lastName, email } = customer;
+	· const [first, second, ...rest] = items;
  
-// Use async/await over promises
-async function fetchCustomer(id) {
+	· // Use async/await over promises
+	· async function fetchCustomer(id) {
     try {
         const response = await fetch(`${API_URL}/customers/${id}`);
         if (!response.ok) throw new Error('Customer not found');
@@ -84,7 +84,7 @@ async function fetchCustomer(id) {
         console.error('Failed to fetch customer:', error);
         throw error;
     }
-}
+	· }
 
 ## Naming Conventions
 	· Variables/Functions: camelCase (getUserData, isActive)
