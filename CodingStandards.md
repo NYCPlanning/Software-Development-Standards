@@ -1,15 +1,15 @@
 # Coding Standards
 ## Assumptions for the SDLC (phases)
-	·//1. Create and assign a User Story, Task, etc.
-	·//2. Analyze.
-	·//3. Code(Implementation, via new feature branch).
-	·//4. Test locally.
-	·//5. Pull Request(of the feature branch).
-	·//6. Code Review(peer review).
-	·//7. Approve/Reject(by peers)
-	·//* A.Deploy to Dev/QA/Staging. 
-	·//* R.Return to Developer with feedback.
-	·//8. Ready for QA.
+	1. Create and assign a User Story, Task, etc.
+	2. Analyze.
+	3. Code(Implementation, via new feature branch).
+	4. Test locally.
+	5. Pull Request(of the feature branch).
+	6. Code Review(peer review).
+	7. Approve/Reject(by peers)
+	* A.Deploy to Dev/QA/Staging. 
+	* R.Return to Developer with feedback.
+	8. Ready for QA.
 
 ## General Principles
 ### Code Quality Standards
