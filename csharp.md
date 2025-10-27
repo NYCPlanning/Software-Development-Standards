@@ -104,22 +104,26 @@
 1. Use xUnit, NUnit, or MSTest. 
 2. Follow AAA pattern: Arrange, Act, Assert.
 3. Use meaningful test names: MethodName_Scenario_ExpectedBehavior.
-3. Mock external dependencies using Moq or Nsubstitute, X.
-4. Aim for 80%+ code coverage on business logic:
-			
-			[Fact] 
-			public async Task GetCustomerAsync_WithValidId_ReturnsCustomer() 
-			{		
-				//Arrange
-				var mockRepo = new Mock<ICustomerRepository>();
-				mockRepo.Setup(r => r.GetByIdAsync(1))
-				.ReturnsAsync(new Customer { Id = 1, Name = "Test" });
-				var service = new CustomerService(mockRepo.Object);    
-				
-				// Act
-				var result = await service.GetCustomerAsync(1);
-				
-				// Assert
-				Assert.NotNull(result);
-				Assert.Equal(1, result.Id);
-			}
+4. Mock external dependencies using Moq or Nsubstitute, X.
+5. Aim for 80%+ code coverage on business logic. 
+
+i.e. 
+
+	[Fact] 
+	public async Task GetCustomerAsync_WithValidId_ReturnsCustomer()
+	{ 
+		//Arrange 
+		var mockRepo = new Mock<ICustomerRepository>(); 
+		mockRepo.Setup(r => r.GetByIdAsync(1))
+		.ReturnsAsync(new Customer { Id = 1, Name = "Test" }); 
+		
+		var service = new CustomerService(mockRepo.Object); 
+		
+		// Act 
+		var result = await service.GetCustomerAsync(1); 
+		
+		// Assert 
+		Assert.NotNull(result); 
+		Assert.Equal(1, result.Id); 
+	} 
+
