@@ -51,19 +51,21 @@
 	//Before C# 12:
 	public class Product
 	{
-  	private readonly string _name;
-  	private readonly decimal _price;
-  	public Product(string name, decimal price)
-  	{
-    	_name = name;
-    	_price = price;
-  	}
-  	public string GetLabel() => $"{_name} - ${_price:F2}";
+  		private readonly string _name;
+  		private readonly decimal _price;
+  		
+		public Product(string name, decimal price)
+  		{
+    		_name = name;
+    		_price = price;
+  		}
+  		public string GetLabel() => $"{_name} - ${_price:F2}";
 	}
+
 	//With Primary Constructors:
 	public class Product(string name, decimal price)
 	{
-  	public string GetLabel() => $"{name} - ${price:F2}";
+  		public string GetLabel() => $"{name} - ${price:F2}";
 	}
 
 ## Async/Await
