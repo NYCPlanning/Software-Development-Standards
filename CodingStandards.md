@@ -18,6 +18,8 @@
 * __DRY Principle__: Don't Repeat Yourself. Extract reusable logic into methods, classes, or modules.
 * __SOLID Principles__: Apply Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion where appropriate.
 * __YAGNI__: You aren't gonna need it.
+* https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions
+* https://learn.microsoft.com/en-us/visualstudio/ide/code-styles-and-code-cleanup
 
 ### Code Reviews and PRs
 * All code must be peer-reviewed before merging to main branches.
@@ -58,11 +60,13 @@ Documentation |docs/\<id\>-\<desc\>| docs/45873-update-getting-started |	Doc spe
 Release |release/v\<MAJOR\>.\<MINOR\>.\<PATCH\>| release/v2.4.1  |	Release preparation 
         
 ## Security Standards (OWASP TOP 10)
+	https://learn.microsoft.com/en-us/dotnet/standard/security/secure-coding-guidelines
 ### Input Validation
 	· Validate all user input on both client and server sides.
 	· Use parameterized queries/ORM to prevent SQL injection.
 	· Sanitize output to prevent XSS attacks.
 	· Implement proper authentication and authorization checks.
+	· https://learn.microsoft.com/en-us/dotnet/standard/security/security-and-user-input
 ### Sensitive Data
 	· Never commit secrets, API keys, or connection strings to source control.
 	· Use environment variables or secure configuration management (nice to have an example file).
@@ -88,11 +92,15 @@ Release |release/v\<MAJOR\>.\<MINOR\>.\<PATCH\>| release/v2.4.1  |	Release prepa
 ### API Documentation
 	· Document all public APIs with request/response examples.
 	· We may use Swagger/OpenAPI for REST APIs.
-
+	· For markdown format documents https://www.markdownguide.org/basic-syntax/
+	
 
 
 
 [C sharp](csharp.md)
+
 [Databases](db.md)
+
 [CI/CD](cidb.md)
+
 [JavaScript](javascript.md)
