@@ -1,4 +1,9 @@
 # C# .NET 8 Standards
+	. https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions
+	. https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions
+
+https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/code-style-rule-options
+
 ## Naming Conventions
 * Classes/Interfaces: PascalCase (CustomerService, IRepository)
 * Methods: PascalCase (GetCustomerById, ProcessOrder)
