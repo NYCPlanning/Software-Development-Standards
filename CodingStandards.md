@@ -96,11 +96,8 @@ Release |release/v\<MAJOR\>.\<MINOR\>.\<PATCH\>| release/v2.4.1  |	Release prepa
 	
 
 
-
-[C sharp](csharp.md)
-
-[Databases](db.md)
-
-[CI/CD](cidb.md)
-
-[JavaScript](javascript.md)
+* [C Sharp](csharp.md)
+* [Databases](db.md)
+* [CI/CD](cicd.md)
+* [JavaScript](javascript.md)
+* [TypeScript](typescript.md)
