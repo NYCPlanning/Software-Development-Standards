@@ -13,11 +13,11 @@
 
 ## General Principles
 ### Code Quality Standards
-* Readability First: Code is read 10x more than written. Prioritize clarity over cleverness.
-* Consistency: Follow established patterns within the codebase. When in doubt, match existing code style.
-* DRY Principle: Don't Repeat Yourself. Extract reusable logic into methods, classes, or modules.
-* SOLID Principles: Apply Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion where appropriate.
-* YAGNI: You aren't gonna need it.
+* __Readability First__: Code is read 10x more than written. Prioritize clarity over cleverness.
+* __Consistency__: Follow established patterns within the codebase. When in doubt, match existing code style.
+* __DRY Principle__: Don't Repeat Yourself. Extract reusable logic into methods, classes, or modules.
+* __SOLID Principles__: Apply Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion where appropriate.
+* __YAGNI__: You aren't gonna need it.
 
 ### Code Reviews and PRs
 * All code must be peer-reviewed before merging to main branches.
@@ -25,13 +25,13 @@
 * Address all comments or provide justification before approval.
 
 __Suggestions__
-* Focusing on the Code, Not the Coder.
+* __Focusing on the Code, Not the Coder__
 When reviewing code, keep comments focused on the changes themselves rather than making assumptions about the author. Instead of saying "You did this wrong," try "This approach could lead to performance issues - what do you think about using X instead?" This small shift in language keeps the discussion collaborative and solution-focused. Remember that reviews are about improving the codebase together, not finding fault.
 
-* Balancing Positive and Negative Feedback.
+* __Balancing Positive and Negative Feedback__
 While identifying issues is important, taking time to point out what's working well reinforces good practices and keeps morale high. Start review threads by acknowledging strengths before suggesting improvements. For instance: "The error handling here is really solid. One small suggestion to make it even better..." This balanced approach creates a more constructive review experience and encourages open dialogue.
   
-* Handling Disagreements Constructively.
+* __Handling Disagreements Constructively__
  Different opinions are normal in code reviews, but how we handle them matters. Skip dismissive responses in favor of curiosity and collaboration. Try phrases like "I see your point about X. I'm wondering if Y might help address the performance concerns?" or "Here's another option to consider - what are your thoughts on this approach?" This turns potential conflicts into chances to find better solutions together.
 
 ## Version Control
@@ -45,8 +45,8 @@ While identifying issues is important, taking time to point out what's working w
 
 ## Branching Strategy (GitHub Flow)
 The table below illustrate how to create different kinds of branches. Use lowercase only for branch names.
-<id>: These should match the ID of the task or bug in Azure
-<desc>: Short concise descriptions, use hyphens(-) instead of spaces
+	· <id>: These should match the ID of the task or bug in Azure
+	· <desc>: Short concise descriptions, use hyphens(-) instead of spaces
 
    Type | Definition | Example | Description
 --------|------------|---------|------------
@@ -123,11 +123,11 @@ Release |release/v\<MAJOR\>.\<MINOR\>.\<PATCH\>| release/v2.4.1  |	Release prepa
 
 ## Testing Standards
 ### Unit Testing (C#)
-Use xUnit, NUnit, or MSTest. 
-Follow AAA pattern: Arrange, Act, Assert.
-Use meaningful test names: MethodName_Scenario_ExpectedBehavior.
-Mock external dependencies using Moq or Nsubstitute, X.
-Aim for 80%+ code coverage on business logic.
+1. Use xUnit, NUnit, or MSTest. 
+2. Follow AAA pattern: Arrange, Act, Assert.
+3. Use meaningful test names: MethodName_Scenario_ExpectedBehavior.
+3. Mock external dependencies using Moq or Nsubstitute, X.
+4. Aim for 80%+ code coverage on business logic.
 	
 	· [Fact]
 	· public async Task GetCustomerAsync_WithValidId_ReturnsCustomer()
@@ -182,5 +182,7 @@ Aim for 80%+ code coverage on business logic.
 
 
 
-[C# Section](csharp.md)
-[DB Section](db.md)
+[C sharp](csharp.md)
+[Databases](db.md)
+[CI/CD](cidb.md)
+[JavaScript](javascript.md)
