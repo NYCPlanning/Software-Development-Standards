@@ -18,8 +18,6 @@
 * __DRY Principle__: Don't Repeat Yourself. Extract reusable logic into methods, classes, or modules.
 * __SOLID Principles__: Apply Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion where appropriate.
 * __YAGNI__: You aren't gonna need it.
-* https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions
-* https://learn.microsoft.com/en-us/visualstudio/ide/code-styles-and-code-cleanup
 
 ### Code Reviews and PRs
 * All code must be peer-reviewed before merging to main branches.
