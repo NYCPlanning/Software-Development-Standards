@@ -100,3 +100,27 @@ throw new OrderProcessingException($"Unable to process order {orderId}");
 	· Prefer List<T> for internal collections, return IEnumerable<T> from methods.
 	· Use collection expressions (C# 12): List<int> numbers = [1, 2, 3, 4]; -- Nice to have, not mandatory
 
+## Testing Standards
+### Unit Testing (C#)
+1. Use xUnit, NUnit, or MSTest. 
+2. Follow AAA pattern: Arrange, Act, Assert.
+3. Use meaningful test names: MethodName_Scenario_ExpectedBehavior.
+3. Mock external dependencies using Moq or Nsubstitute, X.
+4. Aim for 80%+ code coverage on business logic.
+	
+	· [Fact]
+	· public async Task GetCustomerAsync_WithValidId_ReturnsCustomer()
+	· {
+    	· // Arrange
+    	· var mockRepo = new Mock<ICustomerRepository>();
+    	· mockRepo.Setup(r => r.GetByIdAsync(1))
+        	· .ReturnsAsync(new Customer { Id = 1, Name = "Test" });
+    	· var service = new CustomerService(mockRepo.Object);
+ 
+    	· // Act
+    	· var result = await service.GetCustomerAsync(1);
+ 
+    	· // Assert
+    	· Assert.NotNull(result);
+    	· Assert.Equal(1, result.Id);
+	· }
