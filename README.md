@@ -4,3 +4,4 @@ General guidelines for Software Development within our team.
 * [Databases](db.md)
 * [CI/CD](cicd.md)
 * [JavaScript](javascript.md)
+* [TypeScript](typescript.md)
