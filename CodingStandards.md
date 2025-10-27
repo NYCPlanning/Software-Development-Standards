@@ -50,12 +50,12 @@ The table below illustrate how to create different kinds of branches. Use lowerc
 
    Type | Definition | Example | Description
 --------|------------|---------|------------
-Feature |feat/< id >-< desc >| featcode/13031-user-table | New features
-Chore |chore/< desc >| chore/update-axios-to-1.11.0	| Non coding tasks (eg. Dependencies)
-Bugfix  |fix/< id >-< desc >| fix/40417-prevent-form-submission |	Correction to simple errors
-Hotfix  |hotfix/< id >-< desc >| hotfix/63530-login-form-error |	Urgent critical errors for production
-Documentation |docs/< id >-< desc >| docs/45873-update-getting-started |	Doc specific changes
-Release |release/v< MAJOR >.< MINOR >.< PATCH >| release/v2.4.1  |	Release preparation 
+Feature |feat/\<id\>-\<desc\>| feat/13031-user-table | New features
+Chore |chore/\<desc\>| chore/update-axios-to-1.11.0	| Non coding tasks (eg. Dependencies)
+Bugfix  |fix/\<id\>-\<desc\>| fix/40417-prevent-form-submission |	Correction to simple errors
+Hotfix  |hotfix/\<id\>-\<desc\>| hotfix/63530-login-form-error |	Urgent critical errors for production
+Documentation |docs/\<id\>-\<desc\>| docs/45873-update-getting-started |	Doc specific changes
+Release |release/v\<MAJOR\>.\<MINOR\>.\<PATCH\>| release/v2.4.1  |	Release preparation 
         
 ### JavaScript Standards
 ## Modern JavaScript (ES6+)
