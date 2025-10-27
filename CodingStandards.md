@@ -57,32 +57,6 @@ Hotfix  |hotfix/\<id\>-\<desc\>| hotfix/63530-login-form-error |	Urgent critical
 Documentation |docs/\<id\>-\<desc\>| docs/45873-update-getting-started |	Doc specific changes
 Release |release/v\<MAJOR\>.\<MINOR\>.\<PATCH\>| release/v2.4.1  |	Release preparation 
         
-## Testing Standards
-### Unit Testing (C#)
-1. Use xUnit, NUnit, or MSTest. 
-2. Follow AAA pattern: Arrange, Act, Assert.
-3. Use meaningful test names: MethodName_Scenario_ExpectedBehavior.
-3. Mock external dependencies using Moq or Nsubstitute, X.
-4. Aim for 80%+ code coverage on business logic.
-	
-	· [Fact]
-	· public async Task GetCustomerAsync_WithValidId_ReturnsCustomer()
-	· {
-    	· // Arrange
-    	· var mockRepo = new Mock<ICustomerRepository>();
-    	· mockRepo.Setup(r => r.GetByIdAsync(1))
-        	· .ReturnsAsync(new Customer { Id = 1, Name = "Test" });
-    	· var service = new CustomerService(mockRepo.Object);
- 
-    	· // Act
-    	· var result = await service.GetCustomerAsync(1);
- 
-    	· // Assert
-    	· Assert.NotNull(result);
-    	· Assert.Equal(1, result.Id);
-	· }
- 
-
 ## Security Standards (OWASP TOP 10)
 ### Input Validation
 	· Validate all user input on both client and server sides.
