@@ -75,13 +75,11 @@
  * Always use async/await for I/O operations (database, file, network calls).
  * Suffix async methods with Async(GetCustomerAsync, SaveOrderAsync).
  * Never use .Result or .Wait() - this causes deadlocks.
- * Use ConfigureAwait(false) in library code, not in ASP.NET Core applications. (JAIRO CHECK AGAIN THIS LINK 3 times).
 
 ## Dependency Injection
  * Use constructor injection for required dependencies.
  * Register services with appropriate lifetimes (Singleton, Scoped, Transient).
  * Depend on abstractions (interfaces) not concretions.
- * Might consider dynamic registration of services…
 
 ## Error Handling and Resilience
 	// Use specific exceptions
@@ -113,7 +111,7 @@
 5. Aim for 80%+ code coverage on business logic. 
 
 i.e. 
-
+ 
 	[Fact] 
 	public async Task GetCustomerAsync_WithValidId_ReturnsCustomer()
 	{ 
