@@ -97,7 +97,9 @@
 ## LINQ and Collections
  * Use LINQ for clarity, but be mindful of performance with large datasets.
  * Prefer List<T> for internal collections, return IEnumerable<T> from methods.
- * Use collection expressions (C# 12): List<int> numbers = [1, 2, 3, 4]; -- Nice to have, not mandatory
+ * Use collection expressions (C# 12): 
+ 
+		List<int> numbers = [1, 2, 3, 4];
 
 ## Testing Standards
 ### Unit Testing (C#)
