@@ -13,60 +13,60 @@
 	· Use regions sparingly and only for large files with logical groupings.
 
 ## Modern C# Features
-// Use nullable reference types Nullable reference types - C# | Microsoft Learn
-#nullable enable
+	· // Use nullable reference types Nullable reference types - C# | Microsoft Learn
+	· #nullable enable
 
-A nullable reference type is noted using the same syntax as nullable value types: a ? is appended to the type of the variable. For example, the following variable declaration represents a nullable string variable, name:
-string? name;
+A nullable reference type is noted using the same syntax as nullable value types: a ? is appended to the type of the variable. 
+For example, the following variable declaration represents a nullable string variable, name:
+	· string? name;
 
-// Prefer file-scoped namespaces (C# 10+)
-// Traditional namespace declaration
-namespace MyProject
-{
-  class Demo
-  {
-  }
-}
-// File scoped namespace declaration
-namespace MyProject;
-class Demo
-{
-}
+	· // Prefer file-scoped namespaces (C# 10+)
+	· // Traditional namespace declaration
+	· namespace MyProject
+	· {
+  	· class Demo
+  	· {
+  	· }
+	· }
+	· // File scoped namespace declaration
+	· namespace MyProject;
+	· class Demo
+	· {
+	· }
  
-// Use record types for immutable data, not mandatory but nice to have
-public record CustomerDto(int Id, string Name, string Email);
-{
-  public string GetLabel() => $"{name} - ${price:F2}";
-}
+	· // Use record types for immutable data, not mandatory but nice to have
+	· public record CustomerDto(int Id, string Name, string Email);
+	· {
+  	· public string GetLabel() => $"{name} - ${price:F2}";
+	· }
  
-
-// Leverage pattern matching, not mandatory but nice to have
-public decimal CalculateDiscount(Customer customer) => customer switch
-{
-  { IsVip: true, YearsActive > 5 } => 0.20m, 
-  { IsVip: true } => 0.15m, 
-  { YearsActive > 3 } => 0.10m, 
-  _ => 0m
-};
+	· // Leverage pattern matching, not mandatory but nice to have
+	· public decimal CalculateDiscount(Customer customer) => customer switch
+	· {
+  	· { IsVip: true, YearsActive > 5 } => 0.20m, 
+  	· { IsVip: true } => 0.15m, 
+  	· { YearsActive > 3 } => 0.10m, 
+  	· _ => 0m
+	· };
  
-// Use primary constructors where appropriate (C# 12), not mandatory but nice to have
-//Before C# 12:
-public class Product
-{
-  private readonly string _name;
-  private readonly decimal _price;
-  public Product(string name, decimal price)
-  {
-    _name = name;
-    _price = price;
-  }
-  public string GetLabel() => $"{_name} - ${_price:F2}";
-}
-//With Primary Constructors:
-public class Product(string name, decimal price)
-{
-  public string GetLabel() => $"{name} - ${price:F2}";
-}
+	· // Use primary constructors where appropriate (C# 12), not mandatory but nice to have
+	· //Before C# 12:
+	· public class Product
+	· {
+  	· private readonly string _name;
+  	· private readonly decimal _price;
+  	· public Product(string name, decimal price)
+  	· {
+    	· _name = name;
+    	· _price = price;
+  	· }
+  	· public string GetLabel() => $"{_name} - ${_price:F2}";
+	· }
+	· //With Primary Constructors:
+	· public class Product(string name, decimal price)
+	· {
+  	· public string GetLabel() => $"{name} - ${price:F2}";
+	· }
 
 ## Async/Await
 	· Always use async/await for I/O operations (database, file, network calls).
