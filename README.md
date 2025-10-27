@@ -3,3 +3,4 @@ General guidelines for Software Development within our team.
 * [C Sharp](csharp.md)
 * [Databases](db.md)
 * [CI/CD](cicd.md)
+* [JavaScript](javascript.md)
