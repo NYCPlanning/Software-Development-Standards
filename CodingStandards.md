@@ -42,6 +42,8 @@ While identifying issues is important, taking time to point out what's working w
 	· Keep commits atomic and focused on a single concern.
 	· Ensure your commits are descriptive, concise and brief. Use the imperative mood (eg. "Fix" rather than "Fixed").
 	· Everyone does pull requests (Regardless of title).
+	· PR comments may only be resolved by the assigned reviewer.
+	· The PR may may only be approved by the assigned reviewer.
 
 ## Branching Strategy (GitHub Flow)
 The table below illustrate how to create different kinds of branches. Use lowercase only for branch names.
