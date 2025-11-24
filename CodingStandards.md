@@ -1,4 +1,4 @@
-# Coding Standards
+# Software Development Standards 
 ## Assumptions for the SDLC (phases)
 	1. Create and assign a User Story, Task, etc.
 	2. Analyze.
