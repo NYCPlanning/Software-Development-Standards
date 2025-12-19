@@ -18,7 +18,7 @@
 3. File Storage. 
 
 ## 4. Security
-1. Authentication & Authorization. 
+1. Authentication & Authorization.
 2. Input Validation & Sanitization. 
 3. Secrets Management. 
 4. Secure Communications. 
