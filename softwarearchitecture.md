@@ -8,9 +8,9 @@
 1.5	Separation of Concerns. 
 
 ## 2. Reliability & Maintainability
-2.1	Unit Testing and Integration Testing. 
-2.2	Logging and Observability. 
-2.3	Error Handling & Resilience. 
+1. Unit Testing and Integration Testing. 
+2. Logging and Observability. 
+3. Error Handling & Resilience. 
 
 ## 3. Scalability
 3.1	Database Layer. 
