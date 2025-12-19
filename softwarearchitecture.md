@@ -18,17 +18,17 @@
 3. File Storage. 
 
 ## 4. Security
-1 Authentication & Authorization. 
-2 Input Validation & Sanitization. 
-3 Secrets Management. 
-4 Secure Communications. 
+1. Authentication & Authorization. 
+2. Input Validation & Sanitization. 
+3. Secrets Management. 
+4. Secure Communications. 
 
 ## 5. Modular Architecture 
-1	Core Modules. 
-2	Module Encapsulation. 
-3	Code Reuse. 
+1. Core Modules. 
+2. Module Encapsulation. 
+3. Code Reuse. 
 
 ## 6. Technology & Deployment Guidelines
-1	Versioning & CI/CD. 
-2	Containerization & Environment Parity. 
-3	Observability & Metrics. 
+1. Versioning & CI/CD. 
+2. Containerization & Environment Parity. 
+3. Observability & Metrics. 
