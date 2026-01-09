@@ -53,7 +53,7 @@ test('clicking search calls fetch', async () => {
   expect(fakeFetch).toHaveBeenCalled();
 });
 ```
-**BACKEND** (NET 10 with xUnit)
+**BACKEND** (.NET 10 with xUnit)
 
 ```
 using System.Text.Json;
