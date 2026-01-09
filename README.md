@@ -1,5 +1,5 @@
 General guidelines for Software Development within our team.
-* [How to Embrace Architecture](softwarearchitecture.md)
+* [How to Embrace Architecture](embracingarchitecture.md)
 * [Software Architecture Guidelines](softwarearchitecture.md)
 * [Coding Standards](CodingStandards.md)
 * [Unit Testing](unittesting.md)
