@@ -18,6 +18,7 @@
 * __DRY Principle__: Don't Repeat Yourself. Extract reusable logic into methods, classes, or modules.
 * __SOLID Principles__: Apply Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion where appropriate.
 * __YAGNI__: You aren't gonna need it.
+* __Unit Tests__: Write unit tests for every unit of work/functionality. [Review the Unit Testing section](unittesting.md).
 
 ### Code Reviews and PRs
 * All code must be peer-reviewed before merging to main branches.
