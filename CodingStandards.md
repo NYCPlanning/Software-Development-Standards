@@ -96,9 +96,11 @@ Release |release/v\<MAJOR\>.\<MINOR\>.\<PATCH\>| release/v2.4.1  |	Release prepa
 	· For markdown format documents https://www.markdownguide.org/basic-syntax/
 	
 
-
-* [C Sharp](csharp.md)
+* [How to Embrace Architecture](embracingarchitecture.md)
+* [Software Architecture Guidelines](softwarearchitecture.md)
+* [Repository and Branches Configuration](repositoryconfig.md)
 * [Unit Testing](unittesting.md)
+* [C Sharp](csharp.md)
 * [Databases](db.md)
 * [CI/CD](cicd.md)
 * [JavaScript](javascript.md)
