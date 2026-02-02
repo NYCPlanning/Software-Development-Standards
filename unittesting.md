@@ -1,8 +1,8 @@
-We will follow Microsoft's Best practices for writing unit tests.
+We will follow Microsoft's Best practices for writing automated unit tests.
 
 [Best practices for writing unit tests - .NET | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices)
 
-Benefits of unit testing
+Benefits of Automated Unit Testing
 ------------------------
 
 1. Less time performing functional tests
@@ -10,7 +10,7 @@ Benefits of unit testing
 3. Executable documentation
 4. Less coupled code
 
-Characteristics of good unit tests
+Characteristics of good automated unit tests
 ------------------------
 There are several important characteristics that define a good unit test:
 
