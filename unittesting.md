@@ -10,7 +10,7 @@ Benefits of Automated Unit Testing
 3. Executable documentation
 4. Less coupled code
 
-Characteristics of good automated unit tests
+Characteristics of good Automated Unit tests
 ------------------------
 There are several important characteristics that define a good unit test:
 
